@@ -1,0 +1,12 @@
+INSERT INTO Pedido (nombre,vecesventas,precio) VALUES ('Cafe solo',1,2.5);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Con azúcar', 0.70);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Con azúcar morena', 0.80);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Con chocolate', 0.90);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Descafeinado', 0.60);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Con galletas', 1.10);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Con leche desnatada', 0.95);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Con leche entera', 1.00);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Con hielo', 0.10);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Con miel', 0.50);
+INSERT INTO Ingrediente (nombre, precio) VALUES ('Hirviendo', 0.20);
+INSERT INTO pedido_ingrediente (id_pedido, id_ingrediente) VALUES (1, 1);

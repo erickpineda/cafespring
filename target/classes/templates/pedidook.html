@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Pedidos</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"
+	href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" th:href="@{/css/flaticon.css}"
+	href="../../css/flaticon.min.css" />
+
+<link rel="icon" type="image/png" th:href="@{/images/mantis.png}"
+	href="../../images/mantis.png" />
+
+<style type="text/css">
+body {
+	background-image: url('../../images/geometry.png');
+}
+
+.sep {
+	padding-left: 10px;
+}
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<ul class="breadcrumb">
+			<li class="active"><a href="."><i
+					class="flaticon-industrial2"></i><span class="sep">Inicio</span></a></li>
+			<li><a href="hacerpedido">Pedidos</a></li>
+			<li><a href="crearingrediente">Crear Ingrediente</a></li>
+			<li><a href="maspopular">Más Popular</a></li>
+		</ul>
+
+		<div class="row">
+			<div class="col-xs-12">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading text-center">Pedido para la mesa 3</div>
+					<div class="panel-body">
+
+						<div class="row">
+							<div class="col-md-4 col-md-offset-4">
+
+								<div class="alert alert-dismissible alert-danger"
+									th:if="${mensajeError != null}">
+									<button type="button" class="close" data-dismiss="alert">×</button>
+									<strong>Ops!</strong> <i href="#" class=""
+										th:text="${mensajeError}">¡Error!</i>
+								</div>
+
+								<p class="text-primary">
+									Pedido: <span th:text="${cafe}" class="text-success"></span>&nbsp;
+								</p>
+								<p class="text-primary">
+									Total a pagar: <span th:text="${total}" class="text-success"></span>€
+								</p>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript" th:src="@{/js/jquery.min.js}"
+		src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"
+		src="../../js/bootstrap.min.js"></script>
+
+</body>
+</html>

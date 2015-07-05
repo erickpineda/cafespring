@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Cafe</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"
+	href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" th:href="@{/css/flaticon.css}"
+	href="../../css/flaticon.min.css" />
+
+<link rel="icon" type="image/png" th:href="@{/images/mantis.png}"
+	href="../../images/mantis.png" />
+
+<style type="text/css">
+body {
+	background-image: url('../../images/geometry.png');
+}
+
+.sep {
+	padding-left: 10px;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<ul class="breadcrumb">
+			<li class="active"><a href="."><i
+					class="flaticon-industrial2"></i><span class="sep">Inicio</span></a></li>
+			<li><a href="hacerpedido">Pedidos</a></li>
+			<li><a href="crearingrediente">Crear Ingrediente</a></li>
+			<li><a href="maspopular">Más Popular</a></li>
+		</ul>
+
+		<div class="row text-center">
+			<div class="col-xs-12">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">¿Qué quieres hacer?</div>
+					<div class="panel-body">
+
+						<div class="row">
+							<div class="col-md-4 col-md-offset-4">
+
+								<div class="list-group">
+									<a href="hacerpedido" class="list-group-item">
+										<h5 class="list-group-item-heading">Hacer un pedido</h5> <i
+										class="flaticon-industry2"></i>
+
+									</a> <a href="crearingrediente" class="list-group-item">
+										<h5 class="list-group-item-heading">Agregar nuevo
+											ingrediente</h5> <span class="flaticon-worker8"></span>
+
+									</a> <a href="maspopular" class="list-group-item">
+										<h5 class="list-group-item-heading">Mostrar el más
+											vendido</h5> <i class="flaticon-industrial1"></i>
+									</a>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" th:src="@{/js/jquery.min.js}"
+		src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"
+		src="../../js/bootstrap.min.js"></script>
+
+</body>
+</html>
